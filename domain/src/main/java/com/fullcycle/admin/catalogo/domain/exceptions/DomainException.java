@@ -1,23 +1,24 @@
-package com.fullcycle.admin.catalogo.domain.exception;
+package com.fullcycle.admin.catalogo.domain.exceptions;
+
+import com.fullcycle.admin.catalogo.domain.validation.Error;
 
 import java.util.List;
-import com.fullcycle.admin.catalogo.domain.validation.Error;
 
 public class DomainException extends NoStacktraceException {
 
     private final List<Error> errors;
 
     private DomainException(final String aMessage, final List<Error> anErrors) {
-        super(aMessage);;
+        super(aMessage);
         this.errors = anErrors;
     }
 
-    public static DomainException with(final Error anError) {
-        return DomainException.with(List.of(anError));
+    public static DomainException with(final Error anErrors) {
+        return new DomainException(anErrors.message(), List.of(anErrors));
     }
 
-    public static DomainException with(final List<Error> errors) {
-        return new DomainException("", errors);
+    public static DomainException with(final List<Error> anErrors) {
+        return new DomainException("", anErrors);
     }
 
     public List<Error> getErrors() {

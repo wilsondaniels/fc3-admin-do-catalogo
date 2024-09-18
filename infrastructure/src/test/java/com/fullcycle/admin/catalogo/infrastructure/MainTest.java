@@ -1,4 +1,4 @@
-package com.fullcycle.admin.catalogo.infraestructure;
+package com.fullcycle.admin.catalogo.infrastructure;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

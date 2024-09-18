@@ -6,7 +6,6 @@ import java.util.Objects;
 import java.util.UUID;
 
 public class CategoryID extends Identifier {
-
     private final String value;
 
     private CategoryID(final String value) {
@@ -15,7 +14,7 @@ public class CategoryID extends Identifier {
     }
 
     public static CategoryID unique() {
-        return from(UUID.randomUUID());
+        return CategoryID.from(UUID.randomUUID());
     }
 
     public static CategoryID from(final String anId) {
@@ -23,7 +22,11 @@ public class CategoryID extends Identifier {
     }
 
     public static CategoryID from(final UUID anId) {
-        return from(anId.toString().toLowerCase());
+        return new CategoryID(anId.toString().toLowerCase());
+    }
+
+    public String getValue() {
+        return value;
     }
 
     @Override
@@ -31,11 +34,11 @@ public class CategoryID extends Identifier {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         final CategoryID that = (CategoryID) o;
-        return Objects.equals(value, that.value);
+        return getValue().equals(that.getValue());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(value);
+        return Objects.hash(getValue());
     }
 }
