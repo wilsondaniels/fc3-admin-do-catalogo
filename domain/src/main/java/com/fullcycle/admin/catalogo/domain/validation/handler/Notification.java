@@ -1,6 +1,6 @@
 package com.fullcycle.admin.catalogo.domain.validation.handler;
 
-import com.fullcycle.admin.catalogo.domain.exceptions.DomainException;
+import com.fullcycle.admin.catalogo.domain.exception.DomainException;
 import com.fullcycle.admin.catalogo.domain.validation.Error;
 import com.fullcycle.admin.catalogo.domain.validation.ValidationHandler;
 

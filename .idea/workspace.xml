@@ -5,28 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13e070c5-1667-4c55-b7f1-61b54dfa7c02" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/fullcycle/admin/catalogo/application/category/retrieve/get/CategoryOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/fullcycle/admin/catalogo/application/category/retrieve/get/DefaultGetCategoryUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/fullcycle/admin/catalogo/application/category/retrieve/get/GetCategoryUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/fullcycle/admin/catalogo/application/category/retrieve/list/CategoryListOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/fullcycle/admin/catalogo/application/category/retrieve/list/DefaultListCategoriesUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/fullcycle/admin/catalogo/application/category/retrieve/list/ListCategoriesUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/fullcycle/admin/catalogo/application/category/update/DefaultUpdateCategoryUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/fullcycle/admin/catalogo/application/category/update/UpdateCategoryCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/fullcycle/admin/catalogo/application/category/update/UpdateCategoryOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/fullcycle/admin/catalogo/application/category/update/UpdateCategoryUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/fullcycle/admin/catalogo/application/delete/DefaultDeleteCategoryUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/fullcycle/admin/catalogo/application/delete/DeleteCategoryUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/test/java/com/fullcycle/admin/catalogo/application/category/retrieve/get/GetCategoryIdUseCaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/test/java/com/fullcycle/admin/catalogo/application/category/retrieve/list/ListCategoriesUseCaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/test/java/com/fullcycle/admin/catalogo/application/category/update/UpdatedCategoryUseCaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/test/java/com/fullcycle/admin/catalogo/application/delete/DeleteCategoryUseCaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/fullcycle/admin/catalogo/domain/exception/NoStacktraceException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/application/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/com/fullcycle/admin/catalogo/application/UseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/com/fullcycle/admin/catalogo/application/UseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/test/java/com/fullcycle/admin/catalogo/application/UseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/com/fullcycle/admin/catalogo/application/UseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/domain/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/fullcycle/admin/catalogo/domain/AgregateRoot.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/fullcycle/admin/catalogo/domain/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/fullcycle/admin/catalogo/domain/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/test/java/com/fullcycle/admin/catalogo/application/category/create/CreateCategoryUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/com/fullcycle/admin/catalogo/application/category/create/CreateCategoryUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/fullcycle/admin/catalogo/domain/AggregateRoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/fullcycle/admin/catalogo/domain/AggregateRoot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/fullcycle/admin/catalogo/domain/category/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/fullcycle/admin/catalogo/domain/category/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/fullcycle/admin/catalogo/domain/category/CategoryGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/fullcycle/admin/catalogo/domain/category/CategoryGateway.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/fullcycle/admin/catalogo/domain/category/CategoryID.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/fullcycle/admin/catalogo/domain/category/CategoryID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/fullcycle/admin/catalogo/domain/category/CategoryValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/fullcycle/admin/catalogo/domain/category/CategoryValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/fullcycle/admin/catalogo/domain/exception/DomainException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/fullcycle/admin/catalogo/domain/exception/NoStacktraceException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/fullcycle/admin/catalogo/domain/pagination/CategorySeachQuery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/fullcycle/admin/catalogo/domain/exceptions/DomainException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/fullcycle/admin/catalogo/domain/exceptions/NoStacktraceException.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/fullcycle/admin/catalogo/domain/pagination/Pagination.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/fullcycle/admin/catalogo/domain/pagination/Pagination.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/fullcycle/admin/catalogo/domain/validation/ValidationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/fullcycle/admin/catalogo/domain/validation/ValidationHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/fullcycle/admin/catalogo/domain/validation/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/fullcycle/admin/catalogo/domain/validation/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/fullcycle/admin/catalogo/domain/validation/handler/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/fullcycle/admin/catalogo/domain/validation/handler/Notification.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/fullcycle/admin/catalogo/domain/validation/handler/ThrowsValidationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/fullcycle/admin/catalogo/domain/validation/handler/ThrowsValidationHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/test/java/com/fullcycle/admin/catalogo/domain/category/CategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/com/fullcycle/admin/catalogo/domain/category/CategoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infraestructure/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infraestructure/src/main/java/com/fullcycle/admin/catalogo/infraestructure/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infraestructure/src/test/java/com/fullcycle/admin/catalogo/infraestructure/MainTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,49 +106,63 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.CategoryTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CategoryTest.givenAValidActiveCategory_whenCallDeactivate_thenReturnCategoryInactivated.executor&quot;: &quot;Debug&quot;,
-    &quot;Gradle.CategoryTest.givenAValidActiveInactiveCategory_whenCallActivate_thenReturnCategoryActivated.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CategoryTest.givenAValidCategory_whenCallUpdateToInactive_thenReturnCategoryUpdated.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CategoryTest.givenAValidCategory_whenCallUpdateWithInvalidParam_thenReturnCategoryUpdated.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CategoryTest.givenAValidParams_wheCallNewCategory_thenInstantiateACategory.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CategoryTest.givenAnInvalidEmptyName_whenCallNewCategoryAndValidate_thenShouldReceiveError.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CategoryTest.givenAnInvalidNameLenghtLessThan3_whenCallNewCategoryAndValidate_thenShouldReceiveError.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CategoryTest.givenAnInvalidNameLenghtThan255_whenCallNewCategoryAndValidate_thenShouldReceiveError.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CategoryTest.givenAnInvalidNullName_whenCallNewCategoryAndValidate_thenShouldReceiveError.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CreateCategoryUseCaseTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CreateCategoryUseCaseTest.givenAInvalidName_whenCallsCreateCategory_thenReturnDomainException.executor&quot;: &quot;Debug&quot;,
-    &quot;Gradle.CreateCategoryUseCaseTest.givenAInvalidName_whenCallsCreateCategory_thenShouldReturnDomainException.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CreateCategoryUseCaseTest.givenAValidCommandWithInactive_whenCallsCreateCategory_thenReturnInactiveCategory.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CreateCategoryUseCaseTest.givenAValidCommand_whenCallCreateCategory_thenSholdReturnCategoryId.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CreateCategoryUseCaseTest.givenAValidCommand_whenCallCreateCategory_thenShouldReturnCategoryId.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CreateCategoryUseCaseTest.givenAValidCommand_whenGatewayThrowsRandomException_thenShouldReturnAException.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MainTest.testMain.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.UseCaseTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.fc3-admin-do-catalogo [test].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/wilsondaniels/IdeaProjects/fc3-codeflix/fc3-admin-do-catalogo/infraestructure/src/main/java/com/fullcycle/admin/catalogo/infraestructure/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.CategoryTest.executor": "Run",
+    "Gradle.CategoryTest.givenAValidActiveCategory_whenCallDeactivate_thenReturnCategoryInactivated.executor": "Debug",
+    "Gradle.CategoryTest.givenAValidActiveInactiveCategory_whenCallActivate_thenReturnCategoryActivated.executor": "Run",
+    "Gradle.CategoryTest.givenAValidCategory_whenCallUpdateToInactive_thenReturnCategoryUpdated.executor": "Run",
+    "Gradle.CategoryTest.givenAValidCategory_whenCallUpdateWithInvalidParam_thenReturnCategoryUpdated.executor": "Run",
+    "Gradle.CategoryTest.givenAValidParams_wheCallNewCategory_thenInstantiateACategory.executor": "Run",
+    "Gradle.CategoryTest.givenAnInvalidEmptyName_whenCallNewCategoryAndValidate_thenShouldReceiveError.executor": "Run",
+    "Gradle.CategoryTest.givenAnInvalidNameLenghtLessThan3_whenCallNewCategoryAndValidate_thenShouldReceiveError.executor": "Run",
+    "Gradle.CategoryTest.givenAnInvalidNameLenghtThan255_whenCallNewCategoryAndValidate_thenShouldReceiveError.executor": "Run",
+    "Gradle.CategoryTest.givenAnInvalidNullName_whenCallNewCategoryAndValidate_thenShouldReceiveError.executor": "Run",
+    "Gradle.CreateCategoryUseCaseTest.executor": "Run",
+    "Gradle.CreateCategoryUseCaseTest.givenAInvalidName_whenCallsCreateCategory_thenReturnDomainException.executor": "Debug",
+    "Gradle.CreateCategoryUseCaseTest.givenAInvalidName_whenCallsCreateCategory_thenShouldReturnDomainException.executor": "Run",
+    "Gradle.CreateCategoryUseCaseTest.givenAValidCommandWithInactive_whenCallsCreateCategory_thenReturnInactiveCategory.executor": "Run",
+    "Gradle.CreateCategoryUseCaseTest.givenAValidCommand_whenCallCreateCategory_thenSholdReturnCategoryId.executor": "Run",
+    "Gradle.CreateCategoryUseCaseTest.givenAValidCommand_whenCallCreateCategory_thenShouldReturnCategoryId.executor": "Run",
+    "Gradle.CreateCategoryUseCaseTest.givenAValidCommand_whenCallsUpdateCategory_shouldReturnCategoryId.executor": "Run",
+    "Gradle.CreateCategoryUseCaseTest.givenAValidCommand_whenGatewayThrowsRandomException_thenShouldReturnAException.executor": "Run",
+    "Gradle.DeleteCategoryUseCaseTest.executor": "Run",
+    "Gradle.GetCategoryIdUseCaseTest (1).executor": "Run",
+    "Gradle.GetCategoryIdUseCaseTest.executor": "Debug",
+    "Gradle.ListCategoriesUseCaseTest.givenAValidQuery_whenCallsListCategories_shouldReturnCategories.executor": "Run",
+    "Gradle.ListCategoriesUseCaseTest.givenAValidQuery_whenGatewayThrosException_shouldReturnException.executor": "Debug",
+    "Gradle.ListCategoriesUseCaseTest.givenAValidQuery_whenHasNoResults_thanShouldReturnEmptyCategories.executor": "Run",
+    "Gradle.MainTest.testMain.executor": "Run",
+    "Gradle.UpdatedCategoryUseCaseTest.executor": "Run",
+    "Gradle.UpdatedCategoryUseCaseTest.givenACommandWithInvalidId_whenCallsUpdateCategory_thenShouldReturnNotFoundException.executor": "Run",
+    "Gradle.UpdatedCategoryUseCaseTest.givenAInvalidName_whenCallsUpdateCategory_thenShouldReturnDomainException.executor": "Run",
+    "Gradle.UpdatedCategoryUseCaseTest.givenAValidCommand_whenCallsUpdateCategory_shouldReturnCategoryId.executor": "Run",
+    "Gradle.UpdatedCategoryUseCaseTest.givenAValidCommand_whenGatewayThrowsRandomException_shouldReturnAException.executor": "Run",
+    "Gradle.UpdatedCategoryUseCaseTest.givenAValidInactivateCommand_whenCallsUpdateCategory_shouldReturnInactiveCategoryId.executor": "Run",
+    "Gradle.UseCaseTest.executor": "Run",
+    "Gradle.fc3-admin-do-catalogo [test].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "/Users/wilsondaniels/IdeaProjects/fc3-codeflix/fc3-admin-do-catalogo/infraestructure/src/main/java/com/fullcycle/admin/catalogo/infraestructure/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="IntroduceConstantDialog.RECENTS_KEY">
       <recent name="com.fullcycle.admin.catalogo.domain.category.CategoryValidator" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.fullcycle.admin.catalogo.application.category.update" />
       <recent name="com.fullcycle.admin.catalogo.application" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.fc3-admin-do-catalogo [test]">
-    <configuration name="CreateCategoryUseCaseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GetCategoryIdUseCaseTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -156,7 +175,7 @@
           <list>
             <option value=":application:test" />
             <option value="--tests" />
-            <option value="&quot;com.fullcycle.admin.catalogo.application.category.create.CreateCategoryUseCaseTest&quot;" />
+            <option value="&quot;com.fullcycle.admin.catalogo.application.category.retrieve.get.GetCategoryIdUseCaseTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -167,7 +186,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CreateCategoryUseCaseTest.givenAInvalidName_whenCallsCreateCategory_thenReturnDomainException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ListCategoriesUseCaseTest.givenAValidQuery_whenCallsListCategories_shouldReturnCategories" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -180,7 +199,7 @@
           <list>
             <option value=":application:test" />
             <option value="--tests" />
-            <option value="&quot;com.fullcycle.admin.catalogo.application.category.create.CreateCategoryUseCaseTest.givenAInvalidName_whenCallsCreateCategory_thenReturnDomainException&quot;" />
+            <option value="&quot;com.fullcycle.admin.catalogo.application.category.retrieve.list.ListCategoriesUseCaseTest.givenAValidQuery_whenCallsListCategories_shouldReturnCategories&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -191,7 +210,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CreateCategoryUseCaseTest.givenAInvalidName_whenCallsCreateCategory_thenShouldReturnDomainException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ListCategoriesUseCaseTest.givenAValidQuery_whenGatewayThrosException_shouldReturnException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -204,7 +223,7 @@
           <list>
             <option value=":application:test" />
             <option value="--tests" />
-            <option value="&quot;com.fullcycle.admin.catalogo.application.category.create.CreateCategoryUseCaseTest.givenAInvalidName_whenCallsCreateCategory_thenShouldReturnDomainException&quot;" />
+            <option value="&quot;com.fullcycle.admin.catalogo.application.category.retrieve.list.ListCategoriesUseCaseTest.givenAValidQuery_whenGatewayThrosException_shouldReturnException&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -215,7 +234,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CreateCategoryUseCaseTest.givenAValidCommand_whenCallCreateCategory_thenShouldReturnCategoryId" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ListCategoriesUseCaseTest.givenAValidQuery_whenHasNoResults_thanShouldReturnEmptyCategories" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -228,7 +247,7 @@
           <list>
             <option value=":application:test" />
             <option value="--tests" />
-            <option value="&quot;com.fullcycle.admin.catalogo.application.category.create.CreateCategoryUseCaseTest.givenAValidCommand_whenCallCreateCategory_thenShouldReturnCategoryId&quot;" />
+            <option value="&quot;com.fullcycle.admin.catalogo.application.category.retrieve.list.ListCategoriesUseCaseTest.givenAValidQuery_whenHasNoResults_thanShouldReturnEmptyCategories&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -264,10 +283,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.fc3-admin-do-catalogo [test]" />
-        <item itemvalue="Gradle.CreateCategoryUseCaseTest" />
-        <item itemvalue="Gradle.CreateCategoryUseCaseTest.givenAValidCommand_whenCallCreateCategory_thenShouldReturnCategoryId" />
-        <item itemvalue="Gradle.CreateCategoryUseCaseTest.givenAInvalidName_whenCallsCreateCategory_thenShouldReturnDomainException" />
-        <item itemvalue="Gradle.CreateCategoryUseCaseTest.givenAInvalidName_whenCallsCreateCategory_thenReturnDomainException" />
+        <item itemvalue="Gradle.ListCategoriesUseCaseTest.givenAValidQuery_whenGatewayThrosException_shouldReturnException" />
+        <item itemvalue="Gradle.ListCategoriesUseCaseTest.givenAValidQuery_whenHasNoResults_thanShouldReturnEmptyCategories" />
+        <item itemvalue="Gradle.ListCategoriesUseCaseTest.givenAValidQuery_whenCallsListCategories_shouldReturnCategories" />
+        <item itemvalue="Gradle.GetCategoryIdUseCaseTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -298,7 +317,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/application/src/test/java/com/fullcycle/admin/catalogo/application/category/create/CreateCategoryUseCaseTest.java</url>
-          <line>56</line>
+          <line>102</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
