@@ -11,7 +11,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/application" />
             <option value="$PROJECT_DIR$/domain" />
-            <option value="$PROJECT_DIR$/infraestructure" />
+            <option value="$PROJECT_DIR$/infrastructure" />
           </set>
         </option>
       </GradleProjectSettings>
