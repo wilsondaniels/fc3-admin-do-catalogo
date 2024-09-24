@@ -1,4 +1,4 @@
-package com.fullcycle.admin.catalogo.application.delete;
+package com.fullcycle.admin.catalogo.application.category.retrieve.delete;
 
 import com.fullcycle.admin.catalogo.domain.category.CategoryGateway;
 import com.fullcycle.admin.catalogo.domain.category.CategoryID;
