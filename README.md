@@ -12,4 +12,4 @@ Módulo backend para administração do catálogo de vídeos do projeto CodeFlix
 - JUnit 5.8.1
 - Mockito 4.5.1
 - Vavr.io 0.10.4
-
+- Flyway 8.5.10

@@ -1,4 +1,4 @@
-package com.fullcycle.admin.catalogo.application.category.retrieve.delete;
+package com.fullcycle.admin.catalogo.application.category.delete;
 
 import com.fullcycle.admin.catalogo.application.UnitUseCase;
 

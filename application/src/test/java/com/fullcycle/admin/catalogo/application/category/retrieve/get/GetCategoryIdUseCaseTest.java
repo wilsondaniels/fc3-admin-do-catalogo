@@ -19,7 +19,7 @@ import java.util.Optional;
 public class GetCategoryIdUseCaseTest {
 
     @InjectMocks
-    private DefaultGetCategoryUseCase useCase;
+    private DefaultGetCategoryByIdUseCase useCase;
 
     @Mock
     private CategoryGateway categoryGateway;
