@@ -8,10 +8,11 @@ public record UpdateCategoryCommand(
 ) {
 
     public static UpdateCategoryCommand with(
-            final String id,
-            final String name,
-            final String description,
-            final boolean isActive) {
-        return new UpdateCategoryCommand(id, name, description, isActive);
+            final String anId,
+            final String aName,
+            final String aDescription,
+            final boolean isActive
+    ) {
+        return new UpdateCategoryCommand(anId, aName, aDescription, isActive);
     }
 }

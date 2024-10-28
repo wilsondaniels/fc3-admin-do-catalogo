@@ -1,7 +1,6 @@
 package com.fullcycle.admin.catalogo.application.category.create;
 
 import com.fullcycle.admin.catalogo.domain.category.Category;
-import com.fullcycle.admin.catalogo.domain.category.CategoryID;
 
 public record CreateCategoryOutput(
         String id

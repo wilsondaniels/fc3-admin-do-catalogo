@@ -5,6 +5,7 @@ import com.fullcycle.admin.catalogo.application.category.create.DefaultCreateCat
 import com.fullcycle.admin.catalogo.application.category.delete.DefaultDeleteCategoryUseCase;
 import com.fullcycle.admin.catalogo.application.category.delete.DeleteCategoryUseCase;
 import com.fullcycle.admin.catalogo.application.category.retrieve.get.DefaultGetCategoryByIdUseCase;
+import com.fullcycle.admin.catalogo.application.category.retrieve.get.GetCategoryByIdUseCase;
 import com.fullcycle.admin.catalogo.application.category.retrieve.list.DefaultListCategoriesUseCase;
 import com.fullcycle.admin.catalogo.application.category.retrieve.list.ListCategoriesUseCase;
 import com.fullcycle.admin.catalogo.application.category.update.DefaultUpdateCategoryUseCase;
@@ -33,7 +34,7 @@ public class CategoryUseCaseConfig {
     }
 
     @Bean
-    public DefaultGetCategoryByIdUseCase getCategoryByIdUseCase() {
+    public GetCategoryByIdUseCase getCategoryByIdUseCase() {
         return new DefaultGetCategoryByIdUseCase(categoryGateway);
     }
 

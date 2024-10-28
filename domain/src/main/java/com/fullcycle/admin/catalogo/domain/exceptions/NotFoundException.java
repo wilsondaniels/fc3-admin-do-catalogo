@@ -1,4 +1,4 @@
-package com.fullcycle.admin.catalogo.domain.exception;
+package com.fullcycle.admin.catalogo.domain.exceptions;
 
 import com.fullcycle.admin.catalogo.domain.AggregateRoot;
 import com.fullcycle.admin.catalogo.domain.Identifier;
@@ -8,6 +8,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class NotFoundException extends DomainException {
+
     protected NotFoundException(final String aMessage, final List<Error> anErrors) {
         super(aMessage, anErrors);
     }

@@ -7,13 +7,15 @@ import com.fullcycle.admin.catalogo.domain.category.CategorySearchQuery;
 import com.fullcycle.admin.catalogo.domain.pagination.Pagination;
 import com.fullcycle.admin.catalogo.infrastructure.category.persistence.CategoryJpaEntity;
 import com.fullcycle.admin.catalogo.infrastructure.category.persistence.CategoryRepository;
-import com.fullcycle.admin.catalogo.infrastructure.utils.SpecificationUtils;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
+import org.springframework.data.domain.Sort.Direction;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
+
+import static com.fullcycle.admin.catalogo.infrastructure.utils.SpecificationUtils.like;
 
 @Service
 public class CategoryMySQLGateway implements CategoryGateway {
@@ -29,11 +31,6 @@ public class CategoryMySQLGateway implements CategoryGateway {
         return save(aCategory);
     }
 
-    private Category save(Category aCategory) {
-        final CategoryJpaEntity entity = CategoryJpaEntity.from(aCategory);
-        return this.repository.save(entity).toAggregate();
-    }
-
     @Override
     public void deleteById(final CategoryID anId) {
         final String anIdValue = anId.getValue();
@@ -43,13 +40,13 @@ public class CategoryMySQLGateway implements CategoryGateway {
     }
 
     @Override
-    public Optional<Category> findById(CategoryID anId) {
+    public Optional<Category> findById(final CategoryID anId) {
         return this.repository.findById(anId.getValue())
                 .map(CategoryJpaEntity::toAggregate);
     }
 
     @Override
-    public Category update(Category aCategory) {
+    public Category update(final Category aCategory) {
         return save(aCategory);
     }
 
@@ -59,24 +56,31 @@ public class CategoryMySQLGateway implements CategoryGateway {
         final var page = PageRequest.of(
                 aQuery.page(),
                 aQuery.perPage(),
-                Sort.by(Sort.Direction.fromString(aQuery.direction()), aQuery.sort())
+                Sort.by(Direction.fromString(aQuery.direction()), aQuery.sort())
         );
+
         // Busca dinamica pelo criterio terms (name ou description)
         final var specifications = Optional.ofNullable(aQuery.terms())
                 .filter(str -> !str.isBlank())
                 .map(str -> {
-                    final Specification<CategoryJpaEntity> nameLike = SpecificationUtils.like("name", str);
-                    final Specification<CategoryJpaEntity> descriptionLike = SpecificationUtils.like("description", str);
+                    final Specification<CategoryJpaEntity> nameLike = like("name", str);
+                    final Specification<CategoryJpaEntity> descriptionLike = like("description", str);
                     return nameLike.or(descriptionLike);
                 })
                 .orElse(null);
+
         final var pageResult =
                 this.repository.findAll(Specification.where(specifications), page);
+
         return new Pagination<>(
                 pageResult.getNumber(),
                 pageResult.getSize(),
                 pageResult.getTotalElements(),
                 pageResult.map(CategoryJpaEntity::toAggregate).toList()
         );
+    }
+
+    private Category save(final Category aCategory) {
+        return this.repository.save(CategoryJpaEntity.from(aCategory)).toAggregate();
     }
 }

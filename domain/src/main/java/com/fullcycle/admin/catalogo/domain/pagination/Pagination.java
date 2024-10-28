@@ -11,7 +11,10 @@ public record Pagination<T>(
 ) {
 
     public <R> Pagination<R> map(final Function<T, R> mapper) {
-        final var list = this.items.stream().map(mapper).toList();
-        return new Pagination<>(currentPage, perPage, total, list);
+        final List<R> aNewList = this.items.stream()
+                .map(mapper)
+                .toList();
+
+        return new Pagination<>(currentPage(), perPage(), total(), aNewList);
     }
 }

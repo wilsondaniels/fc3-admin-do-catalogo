@@ -44,7 +44,7 @@ public class ListCategoriesUseCaseIT {
     public void givenAValidTerm_whenTermDoesntMatchsPrePersisted_shouldReturnEmptyPage() {
         final var expectedPage = 0;
         final var expectedPerPage = 10;
-        final var expectedTerms = "asdf qwer";
+        final var expectedTerms = "ji1j3i 1j3i1oj";
         final var expectedSort = "name";
         final var expectedDirection = "asc";
         final var expectedItemsCount = 0;

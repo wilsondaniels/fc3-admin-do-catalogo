@@ -12,9 +12,10 @@ public record CategoryOutput(
         boolean isActive,
         Instant createdAt,
         Instant updatedAt,
-        Instant deletedAt) {
+        Instant deletedAt
+) {
 
-    public static CategoryOutput from(Category aCategory) {
+    public static CategoryOutput from(final Category aCategory) {
         return new CategoryOutput(
                 aCategory.getId(),
                 aCategory.getName(),
@@ -22,6 +23,7 @@ public record CategoryOutput(
                 aCategory.isActive(),
                 aCategory.getCreatedAt(),
                 aCategory.getUpdatedAt(),
-                aCategory.getDeletedAt());
+                aCategory.getDeletedAt()
+        );
     }
 }

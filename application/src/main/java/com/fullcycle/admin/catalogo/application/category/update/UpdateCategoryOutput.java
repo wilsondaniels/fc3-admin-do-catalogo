@@ -1,7 +1,6 @@
 package com.fullcycle.admin.catalogo.application.category.update;
 
 import com.fullcycle.admin.catalogo.domain.category.Category;
-import com.fullcycle.admin.catalogo.domain.category.CategoryID;
 
 public record UpdateCategoryOutput(
         String id
@@ -11,7 +10,7 @@ public record UpdateCategoryOutput(
         return new UpdateCategoryOutput(anId);
     }
 
-    public static UpdateCategoryOutput from(final Category category) {
-        return new UpdateCategoryOutput(category.getId().getValue());
+    public static UpdateCategoryOutput from(final Category aCategory) {
+        return new UpdateCategoryOutput(aCategory.getId().getValue());
     }
 }
