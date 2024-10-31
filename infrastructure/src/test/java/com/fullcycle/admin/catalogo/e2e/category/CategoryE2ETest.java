@@ -6,7 +6,7 @@ import com.fullcycle.admin.catalogo.e2e.MockDsl;
 import com.fullcycle.admin.catalogo.infrastructure.category.models.UpdateCategoryRequest;
 import com.fullcycle.admin.catalogo.infrastructure.category.persistence.CategoryRepository;
 import org.junit.jupiter.api.Assertions;
-//import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;// TODO: analyze problem with my personal computer - Testcontainers not working - Slowness!?
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.DynamicPropertyRegistry;
